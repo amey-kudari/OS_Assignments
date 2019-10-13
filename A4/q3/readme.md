@@ -21,7 +21,7 @@
 
 > I took a reverse approach by making the cab drivers search for riders, hence driver thread does most of the computations
 
-- runs in a thread of its own, infinely 
+- runs in a thread of its own, infinitely 
 - has 3 states: 0 (empty), 1(single rider), 2(2 riders/1 premium rider)
 - infinitely, if state is 0, he checks pqueue and then queue for any available riders, if available his state changes to 1 or 2 based on the rider
 - if state changed to 2, (premium rider), `same` is changed to 1 to make sure only one payment process is initiated
